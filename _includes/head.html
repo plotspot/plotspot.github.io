@@ -66,6 +66,8 @@
   
   {% if page.fb-img %}
   <meta property="og:image" content="{{ page.fb-img }}" />
+  {% elsif site.big-avatar %}
+  <meta property="og:image" content="{{ site.url }}{{ site.big-avatar }}" />
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% else %}
