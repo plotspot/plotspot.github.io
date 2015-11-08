@@ -1,0 +1,41 @@
+---
+common-css:
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/css/font-awesome.min.css"
+  - "/assets/css/main.css"
+  - "/assets/css/main-bjek.css"
+common-ext-css:
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/assets/js/bootstrap.min.js"
+  - "/assets/js/skel.min.js"
+  - "/assets/js/util.js"
+  - "/assets/js/main.js"
+---
+
+<!DOCTYPE html>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+  
+  {% include head.html %}
+
+  <body>
+  
+    {% include header.html %}
+
+      {{ content }}
+
+    {% include footer.html %}
+  
+    {% include footer-scripts.html %}
+  
+  </body>
+</html>

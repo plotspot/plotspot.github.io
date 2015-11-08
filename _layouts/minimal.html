@@ -1,0 +1,35 @@
+---
+common-css:
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/css/font-awesome.min.css"
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/css/bjek-main-minimal.css"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/assets/js/bootstrap.min.js"
+  - "/assets/js/skel.min.js"
+  - "/assets/js/util.js"
+---
+
+<!DOCTYPE html>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+      {{ content }}
+
+    {% include footer-minimal.html %}
+  
+    {% include footer-scripts.html %}
+  
+  </body>
+</html>

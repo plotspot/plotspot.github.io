@@ -1,0 +1,181 @@
+---
+layout: page
+title: plotspot
+---
+
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt"><strong>plotspot</strong>, a free and <a href="https://github.com/plotspot/plotspot.github.io">open source</a> catalogue<br />
+								of plots and their code.</h2>
+								<p>Various languages and libraries:</p>
+								  <ul>
+									  <li><strong>R</strong> (base, <a href="https://github.com/hadley/ggplot2">ggplot2</a>,<a href="http://rcharts.io/">rCharts</a>),</li>
+                    <li><strong>Python</strong> (<a href="http://matplotlib.org/">matplotlib</a>, <a href="http://stanford.edu/%7Emwaskom/software/seaborn/">seaborn</a>, <a href="http://ggplot.yhathq.com/">ggplot</a>, <a href="http://bokeh.pydata.org/en/latest/">bokeh</a>, <a href="https://vincent.readthedocs.org/en/latest/">vincent</a>),</li>
+                    <li><strong>MATLAB</strong>, and <strong>Julia</strong> (<a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a>).</p>
+								
+								<p>Click to Filter plots by language:</p>
+							</header>
+
+							<footer>
+								<a href="#plots" class="button scrolly">Python</a>
+								<a href="#plots" class="button scrolly">R</a>
+								<a href="#plots" class="button scrolly">MATLAB</a>
+								<a href="#plots" class="button scrolly">Julia</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Plots -->
+					<section id="plots" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Plots</h2>
+							</header>
+
+							<p>Coming soon... You will be able to filter the types presented below through checkboxes on the left
+                  (the side pane is hidden on mobile but <em>#hash-links</em> in the URL to a specific plot will still work).</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/box.png" alt="" /></a>
+										<header>
+											<h3>Box</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/bubble.png" alt="" /></a>
+										<header>
+											<h3>Bubble</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Donut</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Histogram</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/triple line.png" alt="" /></a>
+										<header>
+											<h3>Line</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/scatter.png" alt="" /></a>
+										<header>
+											<h3>Scatter</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Plot spotted -->
+					<section id="viewer" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Plot viewer</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>This is the {selected} plot, here's the code to generate it in {selected language: default to R ggplot2 if not}.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Think there's a plot type missing, or want to see another plotting library on here? All development is on GitHub,
+                  so feel free to send a pull request or open an issue, ideally with a 'minimal example' in code.</p>
+
+<p>{Insert GitHub links (/use a contributors form?) here}</p>
+						</div>
+					</section>
+
+			</div>
+
+
+
+<!-- This is the conditional bit that Jekyll writes programmatically:
+
+
+<div class="main-explain-area jumbotron">
+  <p>Your website is ready!</p>
+  <p>After editing the <code>_config.yml</code> file to personalize your site's settings, you can start writing blog posts or pages.<p>
+  <p>Below are sample posts for illustration purposes.</p>
+</div>
+
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
+	
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}  
+    </a>
+
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+  
+    <div class="post-entry">
+      {{ post.content | truncatewords: 50 | strip_html}}
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+  
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
+-->
+
+
