@@ -3,6 +3,6 @@ layout: post
 title: First post!
 ---
 
-{% include moreplots.html %}
+{% include test_folder/moreplots.html %}
 
 This is my first post, how exciting!
