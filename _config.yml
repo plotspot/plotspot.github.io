@@ -11,6 +11,7 @@ title: plotspot
 
 # Short description of your site
 description: The spot for plots
+long-description: "plotspot, a free and open source catalogue of plots and their code. Various languages and libraries: R (base, ggplot2, rCharts), Python (matplotlib, seaborn, ggplot, bokeh, vincent), MATLAB, and Julia (Gadfly)."
 
 # --- Navigation bar options --- #
 
