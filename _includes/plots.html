@@ -12,9 +12,11 @@
 
 <!-- for loop through these 3 once verified the output is right -->
 
+Testing collections:
+
     {% for collection in site.collections %}
     <section>
-        <h1><a href="{{ collection.directory }}">{{ collection.title }}</a></h1>
+        <h1><a href="{{ collection.directory }}">Hello {{ collection.title }}</a></h1>
         Label: {{ collection.label }}
     </section>
 {% endfor %}

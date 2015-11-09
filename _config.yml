@@ -69,9 +69,8 @@ paginate: 5
 # Declare collections
 
 collections:
-  plots:
-    output: true
-    permalink: /plot/:path/
+        plots:
+              output: false
 
 
 # Default YAML values (more information on Jekyll's site)
