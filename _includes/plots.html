@@ -12,47 +12,12 @@
 
 <!-- for loop through these 3 once verified the output is right -->
 
-    <div class="4u$ 12u$(mobile)">
-    {% for plot in site.plots %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-      {% if loopindex == 1 %}
-        <article class="item">
-        <a href="#{{ plot.title | slugify }}" class="image fit"><img src="images/{% plot.image %}" alt="" /></a>
-        <header>
-          <h3>{{ plot.title }}</h3>
-        </header>
-        </article>
-      {% endif %}
-    {% endfor %}
-    </div>
-
-    <div class="4u$ 12u$(mobile)">
-    {% for plot in site.plots %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-      {% if loopindex == 2 %}
-        <article class="item">
-        <a href="#{{ plot.title | slugify }}" class="image fit"><img src="images/{% plot.image %}" alt="" /></a>
-        <header>
-          <h3>{{ plot.title }}</h3>
-        </header>
-        </article>
-      {% endif %}
-    {% endfor %}
-    </div>
-
-    <div class="4u$ 12u$(mobile)">
-    {% for plot in site.plots %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-      {% if loopindex == 0 %}
-        <article class="item">
-        <a href="#{{ plot.title | slugify }}" class="image fit"><img src="images/{% plot.image %}" alt="" /></a>
-        <header>
-          <h3>{{ plot.title }}</h3>
-        </header>
-        </article>
-      {% endif %}
-    {% endfor %}
-    </div>
+    {% for collection in site.collections %}
+    <section>
+        <h1><a href="{{ collection.directory }}">{{ collection.title }}</a></h1>
+        Label: {{ collection.label }}
+    </section>
+{% endfor %}
 
 	</div> <!-- end row div -->
 
