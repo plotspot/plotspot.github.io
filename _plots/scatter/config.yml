@@ -1,7 +1,10 @@
 type: scatter
 subtype: 
 
-# e.g. type: bar, subtype stacked ==> "scatter (stacked)"
+# option to deactivate
+active: true
+
+# e.g. type: bar, subtype stacked ==> "bar (stacked)"
 
 # Wikipedia article keyword to generate link e.g.:
 # https://en.wikipedia.org/wiki/Scatter_plot
@@ -14,4 +17,4 @@ datavizcat: scatterplot
 description: "A scatter plot is used for regression analysis when both explanatory and response variables are continuous."
 
 # Cover image for the card
-cover: "/images/
+cover: "scatter.png"

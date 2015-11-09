@@ -47,7 +47,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "plotspot.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -66,19 +66,28 @@ highlighter: pygments
 permalink: /:year-:month-:day-:title
 paginate: 5
 
+# Declare collections
+
+collections:
+  - plots
+
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       comments: true  # add comments to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # all files
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "plots"
+    values:
+      comments
 
 # Exclude these files from production site
 exclude:

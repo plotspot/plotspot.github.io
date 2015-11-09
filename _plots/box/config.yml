@@ -1,17 +1,20 @@
-type: scatter
+type: box
 subtype: 
 
-# e.g. type: bar, subtype stacked ==> "scatter (stacked)"
+# option to deactivate
+active: true
+
+# e.g. type: bar, subtype stacked ==> "bar (stacked)"
 
 # Wikipedia article keyword to generate link e.g.:
 # https://en.wikipedia.org/wiki/Scatter_plot
-wiki_en: Scatter_plot
+wiki_en: Box_plot 
 # Data Viz Catalogue method keyword to generate link e.g.:
 # http://www.datavizcatalogue.com/methods/scatterplot.html
-datavizcat: scatterplot
+datavizcat: box_plot
 
 # Brief description
-description: "A scatter plot is used for regression analysis when both explanatory and response variables are continuous."
+description: "A box plot is an efficient display of a data set's quartiles ('box'), and variability ('whiskers'). "
 
 # Cover image for the card
-cover: "/images/
+cover: "box.png"
