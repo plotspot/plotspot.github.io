@@ -69,7 +69,9 @@ paginate: 5
 # Declare collections
 
 collections:
-  - plots
+  plots:
+    output: true
+    permalink: /plot/:path/
 
 
 # Default YAML values (more information on Jekyll's site)
@@ -83,11 +85,6 @@ defaults:
       path: "" # all files
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "plots"
-    values:
-      comments
 
 # Exclude these files from production site
 exclude:
