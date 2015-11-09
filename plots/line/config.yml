@@ -1,0 +1,20 @@
+type: line
+subtype: multi-series
+
+# option to deactivate
+active: true
+
+# e.g. type: bar, subtype stacked ==> "bar (stacked)"
+
+# Wikipedia article keyword to generate link e.g.:
+# https://en.wikipedia.org/wiki/Scatter_plot
+wiki_en: Line_chart
+# Data Viz Catalogue method keyword to generate link e.g.:
+# http://www.datavizcatalogue.com/methods/scatterplot.html
+datavizcat: line_graph
+
+# Brief description
+description: "A line graph displays quantitative values (markers) over a continuous interval or time series."
+
+# Cover image for the card
+cover: "triple line.png"
