@@ -1,0 +1,20 @@
+type: pie
+subtype: doughnut
+
+# option to deactivate
+active: true
+
+# e.g. type: bar, subtype stacked ==> "bar (stacked)"
+
+# Wikipedia article keyword to generate link e.g.:
+# https://en.wikipedia.org/wiki/Scatter_plot
+wiki_en: Scatter_plot
+# Data Viz Catalogue method keyword to generate link e.g.:
+# http://www.datavizcatalogue.com/methods/scatterplot.html
+datavizcat: donut_chart
+
+# Brief description
+description: "A doughnut chart is a hollow variant of the pie chart, emphasising difference in relative proportions through arc length rather than sector area."
+
+# Cover image for the card
+cover: "donut.png"

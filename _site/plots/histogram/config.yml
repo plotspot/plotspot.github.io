@@ -1,0 +1,33 @@
+type: scatter
+subtype: 
+
+# option to deactivate
+active: true
+
+# e.g. type: bar, subtype stacked ==> "bar (stacked)"
+
+# Wikipedia article keyword to generate link e.g.:
+# https://en.wikipedia.org/wiki/Scatter_plot
+wiki_en: Scatter_plot
+# Data Viz Catalogue method keyword to generate link e.g.:
+# http://www.datavizcatalogue.com/methods/scatterplot.html
+datavizcat: scatterplot
+
+# Brief description
+description: "A scatter plot is used for regression analysis when both explanatory and response variables are continuous."
+
+# Cover image for the card
+cover: "histogram.png"
+
+julia: false
+matlab: false
+py:
+  matplotlib: false
+    ggplot: false
+    prettyplotlib: false
+    seaborn: false
+  vincent: false
+r:
+  ggplot2: false
+  base: false
+  rCharts: false

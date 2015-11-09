@@ -1,2 +1,3 @@
-_site
+# Going to serve the static folder since GitHub Pages currently doesn't support Jekyll 3:
+#_site
 .jekyll-metadata

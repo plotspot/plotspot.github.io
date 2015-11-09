@@ -1,3 +1,8 @@
+# --- Source the static site --- #
+# (Because GitHub Pages doesn't support Jekyll 3 yet)
+
+source: ./_site
+
 # --- Serving options --- #
 
 # url is the full website URL
